@@ -1,0 +1,16 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+{% for l in contacts %}
+{{l.number}}
+{{l.adres}}
+{% endfor %}
+<a href="{% url 'main:home' %}">назад</a>
+</body>
+</html>
